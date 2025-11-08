@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vasu | Portfolio</title>
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header id="top">
+    <h1>Vasu's Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="/vasu image.jpg" alt="Vasu's Photo" class="profile-img">
+    <p>
+      Hello! I’m <strong>Vasu</strong>, a web development enthusiast with a keen interest in
+      creating clean, responsive, and user-friendly websites. I enjoy learning new technologies
+      and building projects that make a real impact.
+    </p>
+  </section>
+
+  <hr>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <table>
+      <tr>
+        <th>Skill</th>
+        <th>Proficiency</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Advanced</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Intermediate</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Intermediate</td>
+      </tr>
+    </table>
+  </section>
+
+  <hr>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Caloriemeter (Python)</h3>
+      <p>
+        A simple web app to calculate calorie intake based on food and portion size.
+        Built using Python.
+      </p>
+    </div>
+    <div class="project">
+      <h3>Gradebook Analyzer (Python)</h3>
+      <p>
+        A Python program that reads student data, computes grades, and provides
+        summary statistics with a clean user interface.
+      </p>
+    </div>
+    <div class="project">
+      <h3>Portfolio Website (HTML,CSS)</h3>
+      <p>
+        A one page portfolio built with the help of HTML.
+      </p>
+    </div>
+    <div class="project">
+      <h3>User Form (HTML,CSS)</h3>
+      <p>
+        A simple user form wih fields name like email , name, message , etc..
+      </p>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" placeholder="Your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  
+  <button id="backToTop">↑ Back to Top</button>
+
+  <script>
+    const btn = document.getElementById("backToTop");
+    window.onscroll = () => {
+      btn.style.display = window.scrollY > 200 ? "block" : "none";
+    };
+    btn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  </script>
+
+</body>
+</html>

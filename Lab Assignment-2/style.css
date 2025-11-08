@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8faff;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #002b73;
+  border-radius: 5px;
+}
+
+
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+section h2 {
+  color: #004aad;
+  border-bottom: 2px solid #004aad;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 1rem auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+
+table {
+  width: 60%;
+  margin: 1.5rem auto;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #004aad;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f6ff;
+}
+
+
+.project {
+  background: white;
+  width: 70%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+  color: #004aad;
+}
+
+
+form {
+  width: 60%;
+  margin: auto;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #004aad;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #002b73;
+}
+
+
+#backToTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+#backToTop:hover {
+  background-color: #002b73;
+}
+
+
+footer {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 1.5rem;
+}
+
+hr {
+  border: none;
+  border-top: 2px dashed #004aad;
+  width: 70%;
+  margin: 2rem auto;
+}
