@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
+}
+
+section {
+  padding: 5rem 10%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 1rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #222;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff4d4d;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding-top: 6rem;
+}
+
+.hero-text {
+  flex: 1;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.highlight {
+  color: #ff4d4d;
+}
+
+.animated-role {
+  font-size: 1.8rem;
+  animation: colorChange 3s infinite alternate;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.oval-pic {
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 50% / 36%;
+  display: block;
+}
+
+.btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+#about p {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background: #fff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card:hover {
+  background: #ff4d4d;
+  color: white;
+  transform: translateY(-5px);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #222;
+  color: white;
+}
+
+@keyframes colorChange {
+  from {
+    color: #ff4d4d;
+  }
+  to {
+    color: #007bff;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .oval-pic {
+    max-width: 260px;
+  }
+}

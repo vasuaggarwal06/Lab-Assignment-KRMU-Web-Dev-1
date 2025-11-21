@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">MyPortfolio</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-text">
+            <h1>Hello, I'm <span class="highlight">Vasu Aggarwal</span></h1>
+            <h2 class="animated-role">Full Stack Developer</h2>
+            <p>I am a full stack developer.</p>
+        </div>
+
+        <div class="hero-img">
+            <img src="/vasu.jpg" alt="Profile" class="oval-pic">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I am a passionate developer who enjoys creating clean, modern, and responsive user experiences.
+            I love turning ideas into functional products.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Python</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A responsive site built using Flexbox and Grid.</p>
+                <button class="btn">View Project</button>
+            </div>
+
+            <div class="project-card">
+                <h3>Care Mangalam</h3>
+                <p>A complaint and maintainance portal(HTML,CSS,JS).</p>
+                <button class="btn">View Project</button>
+            </div>
+
+            <div class="project-card">
+                <h3>Python Calorie tracker</h3>
+                <p>Calorie Tracker using python.</p>
+                <button class="btn">View Project</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Your Message" rows="5"></textarea>
+            <button class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 My Portfolio.. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
