@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GadgetHub - E-commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://pbs.twimg.com/profile_images/1473398932239753220/J2UJU-6B_400x400.jpg" alt="GadgetHub Logo">
+                <h1>GadgetHub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Discover the Latest Gadgets</h2>
+            <p>Shop top-quality electronics at unbeatable prices.</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <aside class="filters">
+            <h3>Filters</h3>
+            <ul>
+                <li><input type="checkbox" id="category1"><label for="category1">Laptops</label></li>
+                <li><input type="checkbox" id="category2"><label for="category2">Phones</label></li>
+                <li><input type="checkbox" id="category3"><label for="category3">Accessories</label></li>
+            </ul>
+            <h4>Price Range</h4>
+            <ul>
+                <li>$0 - $500</li>
+                <li>$500 - $1000</li>
+                <li>$1000+</li>
+            </ul>
+        </aside>
+
+        <section id="products" class="products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-6141.jpg?auto=webp&quality=75&width=1024" alt="Wireless Headphones">
+                    <h3>Wireless Headphones</h3>
+                    <p>$99.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </article>
+                <article class="product-card">
+                    <img src="https://www.honor.com/content/dam/honor/uk/blog/2024/5-things-a-smartphone-can-do/imgs-01.jpg" alt="Smartphone">
+                    <h3>Smartphone</h3>
+                    <p>$699.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </article>
+                <article class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/71d1kjcqTGL._SY450_.jpg" alt="Laptop">
+                    <h3>Laptop</h3>
+                    <p>$1299.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </article>
+                <article class="product-card">
+                    <img src="https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/308032_eo0iwq.png" alt="Tablet">
+                    <h3>Tablet</h3>
+                    <p>$399.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="product-detail">
+            <h2>Product Details</h2>
+            <article>
+                <img src="https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-6141.jpg?auto=webp&quality=75&width=1024" alt="Detailed view of Wireless Headphones">
+                <div>
+                    <h3>Wireless Headphones</h3>
+                    <p>High-quality sound with noise cancellation. Perfect for music lovers.</p>
+                    <ul>
+                        <li>Bluetooth 5.0</li>
+                        <li>30-hour battery</li>
+                        <li>Comfortable fit</li>
+                    </ul>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </article>
+        </section>
+
+        <section id="contact" class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required placeholder="Your message"></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 GadgetHub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                <a href="#" aria-label="Twitter"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
